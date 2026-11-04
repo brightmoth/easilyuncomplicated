@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Track your work hours, tasks, and earnings.">
+  <title>Timesheet | Easily Uncomplicated</title>
+  <link rel="stylesheet" href="timesheet.css">
+  <script src="timesheet.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Timesheet</h1>
+    <p>Simple on purpose.</p>
+  </header>
+
+  <main>
+    <section aria-labelledby="entry-heading">
+      <h2 id="entry-heading">Log time</h2>
+
+      <form id="time-entry-form">
+        <fieldset>
+          <legend>Entry method</legend>
+          <label>
+            <input type="radio" name="entry-method" value="manual" checked>
+            Enter times
+          </label>
+          <label>
+            <input type="radio" name="entry-method" value="timer">
+            Use timer
+          </label>
+        </fieldset>
+        <div>
+          <label for="entry-date">Date</label>
+          <input id="entry-date" name="date" type="date" required>
+        </div>
+        <div>
+          <label for="entry-from">From</label>
+          <input id="entry-from" name="from" type="time" required>
+        </div>
+        <div>
+          <label for="entry-to">To</label>
+          <input id="entry-to" name="to" type="time" required>
+        </div>
+        <div>
+          <label for="entry-task">Task</label>
+          <input id="entry-task" name="task" list="task-options" required>
+          <datalist id="task-options">
+            <option value="Client meeting"></option>
+            <option value="Maintenance"></option>
+            <option value="Admin"></option>
+            <option value="Travel"></option>
+          </datalist>
+        </div>
+        <div>
+          <label for="entry-note">Note (optional)</label>
+          <textarea id="entry-note" name="note" rows="2"></textarea>
+        </div>
+        <div>
+          <label for="entry-break">Break in minutes (optional)</label>
+          <input id="entry-break" name="break" type="number" min="0" step="1">
+        </div>
+        <button type="submit">Add entry</button>
+      </form>
+
+      <div aria-label="Timer controls">
+        <button type="button">Start timer</button>
+        <button type="button">Stop timer</button>
+        <p>Timer is not running.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="entries-heading">
+      <h2 id="entries-heading">Time entries</h2>
+      <table>
+        <caption>Recorded time entries</caption>
+        <thead>
+          <tr>
+            <th scope="col">Date</th>
+            <th scope="col">Time</th>
+            <th scope="col">Task</th>
+            <th scope="col">Hours</th>
+            <th scope="col">Note</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="6">No time entries yet.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Summary</h2>
+      <div>
+        <label for="summary-period">Period</label>
+        <select id="summary-period" name="period">
+          <option value="week">This week</option>
+          <option value="month">This month</option>
+          <option value="custom">Custom range</option>
+        </select>
+      </div>
+      <div>
+        <label for="range-from">Range from</label>
+        <input id="range-from" name="range-from" type="date">
+        <label for="range-to">Range to</label>
+        <input id="range-to" name="range-to" type="date">
+      </div>
+
+      <dl>
+        <div>
+          <dt>Total hours</dt>
+          <dd>—</dd>
+        </div>
+        <div>
+          <dt>Regular hours</dt>
+          <dd>—</dd>
+        </div>
+        <div>
+          <dt>Overtime hours</dt>
+          <dd>—</dd>
+        </div>
+        <div>
+          <dt>Total earnings</dt>
+          <dd>Add your rates to see earnings.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="hours-chart-heading">
+      <h2 id="hours-chart-heading">Hours per day</h2>
+      <p>No hours recorded for this period.</p>
+      <table>
+        <caption>Hours by day, including regular and overtime hours</caption>
+        <thead>
+          <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Regular hours</th>
+            <th scope="col">Overtime hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">No data for this period.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="tasks-chart-heading">
+      <h2 id="tasks-chart-heading">Time by task</h2>
+      <p>No task time recorded for this period.</p>
+      <table>
+        <caption>Hours and share of time by task</caption>
+        <thead>
+          <tr>
+            <th scope="col">Task</th>
+            <th scope="col">Hours</th>
+            <th scope="col">Share</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">No data for this period.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section aria-labelledby="earnings-heading">
+      <h2 id="earnings-heading">Earnings</h2>
+      <dl>
+        <div>
+          <dt>Regular pay</dt>
+          <dd>—</dd>
+        </div>
+        <div>
+          <dt>Overtime pay</dt>
+          <dd>—</dd>
+        </div>
+        <div>
+          <dt>Total pay</dt>
+          <dd>Add your rates to see earnings.</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="tasks-heading">
+      <h2 id="tasks-heading">Task presets</h2>
+      <ul>
+        <li>Client meeting</li>
+        <li>Maintenance</li>
+        <li>Admin</li>
+        <li>Travel</li>
+      </ul>
+      <form id="task-form">
+        <label for="new-task">Add a task</label>
+        <input id="new-task" name="task" type="text">
+        <button type="submit">Add task</button>
+      </form>
+    </section>
+
+    <details>
+      <summary>Settings</summary>
+      <form id="settings-form">
+        <div>
+          <label for="hourly-wage">Hourly wage (R)</label>
+          <input id="hourly-wage" name="hourly-wage" type="number" min="0" step="0.01">
+        </div>
+        <fieldset>
+          <legend>Overtime wage</legend>
+          <label for="overtime-wage-type">Wage type</label>
+          <select id="overtime-wage-type" name="overtime-wage-type">
+            <option value="amount">Rand amount</option>
+            <option value="multiplier">Multiplier</option>
+          </select>
+          <label for="overtime-wage">Overtime rate</label>
+          <input id="overtime-wage" name="overtime-wage" type="number" min="0" step="0.01">
+        </fieldset>
+        <div>
+          <label for="overtime-threshold">Overtime starts after</label>
+          <input id="overtime-threshold" name="overtime-threshold" type="number" min="0" step="0.25">
+          <span>hours</span>
+        </div>
+        <fieldset>
+          <legend>Overtime rule</legend>
+          <label>
+            <input type="radio" name="overtime-rule" value="daily" checked>
+            Daily
+          </label>
+          <label>
+            <input type="radio" name="overtime-rule" value="weekly">
+            Weekly
+          </label>
+        </fieldset>
+      </form>
+    </details>
+
+    <section aria-labelledby="data-heading">
+      <h2 id="data-heading">Export and backup</h2>
+      <button type="button">Export CSV</button>
+      <button type="button">Download backup</button>
+      <div>
+        <label for="backup-file">Restore from backup file</label>
+        <input id="backup-file" name="backup-file" type="file" accept="application/json,.json">
+        <button type="button">Restore backup</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Timesheet by Easily Uncomplicated.</p>
+  </footer>
+</body>
+</html>
