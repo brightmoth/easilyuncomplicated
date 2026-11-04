@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Easily Uncomplicated YouTube profile picture</title>
+  <desc id="description">The EU monogram centered in a circle-safe amber badge on navy.</desc>
+  <rect width="1024" height="1024" fill="#202D50"/>
+  <circle cx="512" cy="512" r="446" fill="#F3B544"/>
+  <g transform="translate(92 92) scale(5)">
+    <path d="M37 31 H114 V55 H67 V73 H106 V96 H67 V113 H114 V137 H37 Z" fill="#202D50"/>
+    <path d="M88 31 H104 V78 C104 97 111 107 126 107 C141 107 148 97 148 78 V31 H164 V80 C164 113 150 132 126 132 C102 132 88 113 88 80 Z" fill="#F7F5EF"/>
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 1152" role="img" aria-labelledby="title description">
+  <title id="title">Easily Uncomplicated YouTube channel banner</title>
+  <desc id="description">Navy channel art with the EU monogram, Easily Uncomplicated wordmark, and Simple on purpose tagline. Main content is centered for safe cropping.</desc>
+  <rect width="2048" height="1152" fill="#202D50"/>
+
+  <circle cx="1800" cy="230" r="370" fill="#F3B544" opacity=".055"/>
+  <circle cx="1800" cy="230" r="270" fill="none" stroke="#F3B544" stroke-width="3" opacity=".13"/>
+  <circle cx="240" cy="1020" r="300" fill="#F7F5EF" opacity=".025"/>
+  <path d="M0 780 C250 660 330 780 500 700" fill="none" stroke="#F3B544" stroke-width="3" opacity=".12"/>
+
+  <rect x="690" y="484" width="184" height="184" rx="40" fill="#F3B544"/>
+  <path d="M731 516 H814 V542 H763 V561 H805 V586 H763 V604 H814 V630 H731 Z" fill="#202D50"/>
+  <path d="M787 516 H805 V566 C805 587 813 598 829 598 C845 598 853 587 853 566 V516 H871 V568 C871 604 856 624 829 624 C802 624 787 604 787 568 Z" fill="#F7F5EF"/>
+
+  <text x="930" y="558" fill="#F7F5EF" font-family="Outfit, 'Helvetica Neue', Arial, sans-serif" font-size="80" font-weight="700" letter-spacing="-2.8">Easily</text>
+  <text x="930" y="630" fill="#F7F5EF" font-family="Outfit, 'Helvetica Neue', Arial, sans-serif" font-size="58" font-weight="400" letter-spacing="-1.8">Uncomplicated</text>
+  <path d="M934 663 H1070" fill="none" stroke="#F3B544" stroke-width="6" stroke-linecap="round"/>
+  <text x="934" y="705" fill="#F7F5EF" font-family="Outfit, 'Helvetica Neue', Arial, sans-serif" font-size="25" font-weight="400" letter-spacing=".2">Simple on purpose.</text>
+</svg>

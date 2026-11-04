@@ -8,6 +8,8 @@
 - `icon.svg` — standalone EU app/site icon.
 - `favicon.svg` — SVG favicon.
 - `colors.css` — brand color custom properties.
+- `youtube-profile.svg` / `youtube-profile.png` — square profile image with the mark inside YouTube's circular crop.
+- `youtube-banner-2048x1152.svg` / `.png` — YouTube channel art at exactly 2048 × 1152 pixels.
 
 ## Use on the website
 
@@ -31,3 +33,9 @@ sans-serif fonts; load Outfit on the site if an exact type match is needed.
 The SVG favicon is suitable for current browsers. If adding Apple Home Screen
 support or legacy browser support, export `icon.svg` to PNG at the required
 sizes and add those links to the site's document head.
+
+## YouTube assets
+
+The PNG files are ready to upload. The SVGs are included as scalable source
+files. The banner's logo and text are grouped near the center so they remain
+visible when YouTube crops the artwork for different screens.
