@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 760" role="img" aria-labelledby="logo-title logo-description">
+  <title id="logo-title">Easily Uncomplicated — EU monogram</title>
+  <desc id="logo-description">A navy, amber, and ivory EU monogram with a horizontal wordmark and app icon preview.</desc>
+  <rect width="1280" height="760" fill="#F5F2EC"/>
+
+  <g font-family="'Helvetica Neue', Arial, sans-serif">
+    <text x="76" y="92" fill="#202327" font-size="38" font-weight="700" letter-spacing="-1">EU Monogram</text>
+    <text x="78" y="127" fill="#62676C" font-size="16">A distinctive initial mark paired with a straightforward wordmark.</text>
+
+    <rect x="76" y="166" width="1128" height="380" rx="24" fill="#202D50"/>
+
+    <rect x="130" y="272" width="168" height="168" rx="36" fill="#F3B544"/>
+    <path d="M167 303 H244 V327 H197 V345 H236 V368 H197 V385 H244 V409 H167 Z" fill="#202D50"/>
+    <path d="M218 303 H234 V350 C234 369 241 379 256 379 C271 379 278 369 278 350 V303 H294 V352 C294 385 280 404 256 404 C232 404 218 385 218 352 Z" fill="#F7F5EF"/>
+
+    <text x="356" y="335" fill="#F7F5EF" font-size="59" font-weight="700" letter-spacing="-2">Easily</text>
+    <text x="356" y="398" fill="#F7F5EF" font-size="52" font-weight="400" letter-spacing="-2">Uncomplicated</text>
+    <path d="M358 424 H490" fill="none" stroke="#F3B544" stroke-width="5" stroke-linecap="round"/>
+
+    <text x="76" y="612" fill="#62676C" font-size="12" font-weight="700" letter-spacing="2">APP ICON PREVIEW</text>
+    <rect x="76" y="636" width="88" height="88" rx="22" fill="#202D50"/>
+    <path d="M96 655 H132 V666 H110 V674 H128 V685 H110 V693 H132 V704 H96 Z" fill="#F3B544"/>
+    <path d="M119 655 H130 V678 C130 687 134 692 142 692 C150 692 154 687 154 678 V655 H165 V679 C165 695 156 704 142 704 C128 704 119 695 119 679 Z" fill="#F7F5EF" transform="translate(-8 0)"/>
+
+    <text x="210" y="670" fill="#202327" font-size="20" font-weight="600">Memorable at a glance</text>
+    <text x="210" y="700" fill="#62676C" font-size="16">The joined initials create a compact mark for small spaces.</text>
+    <text x="1204" y="704" fill="#62676C" font-size="13" text-anchor="end">NAVY · AMBER · IVORY</text>
+  </g>
+</svg>

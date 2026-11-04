@@ -2,16 +2,15 @@
 
 **Name:** Easily Uncomplicated
 **Tagline:** Simple on purpose.
-**Feel:** Professional, clean, minimal. Earthy greens and blue-greys.
+**Feel:** Clear, confident, modern, and approachable. A deep navy foundation, warm amber accent, and soft ivory neutrals.
 
 ## Status
 
 | Decision | Status |
 |---|---|
-| Name | Easily Uncomplicated |
-| Base colours: pine, olive, slate, steel | Chosen |
-| Accent colour for the dot | Chosen: lime `#C6F135` |
-| Logo | Tangled lines pulled straight to a dot, with the name built in: the line lockup (main) and the bundle (for big uses). The icon and stacked lockup stay for small and square spaces |
+| Name | Chosen: Easily Uncomplicated |
+| Core palette | Chosen: navy, amber, and ivory |
+| Logo | EU monogram with a wordmark; use the monogram alone for app icons and other small spaces |
 
 ---
 
@@ -19,138 +18,109 @@
 
 | Name | Hex | Use |
 |---|---|---|
-| Pine | `#1F3D36` | Main brand colour: primary buttons, headings, links |
-| Olive | `#4F5D2F` | Second brand colour: feature panels, highlights |
-| Slate | `#2B3A42` | Dark panels, footers |
-| Steel | `#7A8B94` | Quiet things: borders, dividers, icons, large decoration. **Not for text** |
+| Navy | `#202D50` | Primary brand colour: wordmark on light surfaces, dark panels, headings, links, and primary buttons |
+| Amber | `#F3B544` | Accent: monogram tile, small highlights, and secondary buttons with navy text |
+| Ivory | `#F7F5EF` | Light logo details, text on navy, and light surfaces |
 
-## 2. Supporting colours
+### Supporting neutrals
 
 | Name | Hex | Use |
 |---|---|---|
-| Stone | `#F0EFE9` | Page background, print |
-| Night pine | `#12261F` | Body text on light backgrounds, hover colour for pine buttons |
-| Deep steel | `#5F6C73` | Quiet text on light backgrounds (the readable version of steel) |
-| Brick | `#B3382C` | Errors only (a suggestion, not yet discussed) |
+| Paper | `#F5F2EC` | Warm page and document background |
+| Ink | `#202327` | Body text on light backgrounds |
+| Muted ink | `#62676C` | Secondary text on light backgrounds |
 
-## 3. Accent: lime
-
-The accent is the dot in the logo, plus the odd small highlight. Keep it rare so it stands out.
-
-| Option | Hex | Notes |
-|---|---|---|
-| Lime | `#C6F135` | **Chosen.** Fresh, and the most readable on pine, olive, slate and deep steel. Too faint on light steel (2.7:1) |
-| Apricot | `#FFB27A` | Considered. Warm contrast against the cool base colours. Weaker on olive, and too faint on light steel (2.0:1) |
-| Yellow | `#FFD23F` | Considered. Bright and readable, a good third choice |
-| Lilac | `#C9B6F2` | Considered. Weakest on olive and light steel |
-
-Never use the accent as text on a light background. It is too pale. Use it as a fill (with dark text) or as the dot.
-
-Lime is close in hue to Olive, so keep the dot small and let the brightness do the work.
+Use the three core colours consistently. Supporting neutrals provide readable text and calm backgrounds without introducing competing brand colours.
 
 ---
 
-## 4. Contrast checks
+## 2. Contrast
 
-Measured with the standard WCAG contrast formula. Text needs 4.5:1 or more. Large text and graphics need 3:1 or more.
+Measured with the standard WCAG contrast formula. Text needs 4.5:1 or more; large text and meaningful graphics need 3:1 or more.
 
 | Pair | Ratio | Verdict |
-|---|---|---|
-| Night pine on Stone (body text) | 13.8:1 | Pass (text) |
-| Pine on Stone (headings, links) | 10.2:1 | Pass (text) |
-| Slate on Stone | 10.2:1 | Pass (text) |
-| Olive on Stone | 6.2:1 | Pass (text) |
-| Deep steel on Stone (quiet text) | 4.7:1 | Pass (text) |
-| Steel on Stone (not for text) | 3.1:1 | Large text and graphics only |
-| Brick on Stone (errors) | 5.2:1 | Pass (text) |
-| Stone on Pine (button text) | 10.2:1 | Pass (text) |
-| Stone on Olive | 6.2:1 | Pass (text) |
-| Stone on Slate | 10.2:1 | Pass (text) |
-| Stone on Steel (avoid) | 3.1:1 | Large text and graphics only |
-| Stone on Deep steel | 4.7:1 | Pass (text) |
-| Night pine on Lime (button text) | 12.1:1 | Pass (text) |
-| Night pine on Apricot (button text) | 9.0:1 | Pass (text) |
+|---|---:|---|
+| Navy on Ivory | 12.4:1 | Pass (text) |
+| Ivory on Navy | 12.4:1 | Pass (text) |
+| Navy on Amber | 7.4:1 | Pass (text) |
+| Amber on Navy | 7.4:1 | Pass (text) |
+| Navy on Paper | 12.1:1 | Pass (text) |
+| Ink on Paper | 14.1:1 | Pass (text) |
+| Muted ink on Paper | 5.1:1 | Pass (text) |
+| Amber on Ivory | 1.7:1 | Fails; do not rely on this pairing for text or important graphics |
 
-**Accent on each base colour**
-
-| Accent | on Pine | on Olive | on Slate | on Deep steel | on Steel | on Stone |
-|---|---|---|---|---|---|---|
-| Lime #C6F135 | 9.0:1 | 5.5:1 | 9.0:1 | 4.1:1 | 2.7:1 | 1.1:1 |
-| Apricot #FFB27A | 6.7:1 | 4.0:1 | 6.7:1 | 3.1:1 | 2.0:1 | 1.5:1 |
+Amber and ivory are both light colours, so keep navy between them where contrast is needed. Amber is an accent, not a text colour on light backgrounds.
 
 ---
 
-## 5. Using the colours
+## 3. Using the colours
 
-- **Page:** Stone background, Night pine text.
-- **Buttons:** Pine with Stone text. Hover and pressed use Night pine.
-- **Accent buttons:** accent colour with Night pine text.
-- **Cards and panels:** Slate or Olive with Stone text, or a light tint of Stone on Stone.
-- **Borders and dividers:** Steel. Input boxes need a stronger border (Deep steel) so they are easy to see.
-- **Quiet text:** Deep steel, never plain Steel.
-- **Errors:** Brick, and always with words, not colour alone.
-- **Accent:** the dot and small highlights only.
+- **Pages:** Paper or Ivory backgrounds, Ink body text, and Navy headings and links.
+- **Primary buttons:** Navy with Ivory text.
+- **Accent buttons:** Amber with Navy text.
+- **Dark panels:** Navy with Ivory text; use Amber as a small highlight.
+- **Cards:** Ivory or Paper surfaces with Navy headings and Ink body text.
+- **Quiet text:** Muted ink on light backgrounds.
+- **Amber:** Use sparingly for emphasis, not for long text or fine details on light surfaces.
 
-## 6. Logo
+---
 
-The idea stays the same as today: tangled lines pulled straight, ending in a dot. Now the name is built into it.
+## 4. Logo
+
+The logo is a bold **EU monogram** paired with the name. The letters overlap to form a compact, recognizable mark.
 
 ### Versions
 
 | Version | Use | How it looks |
 |---|---|---|
-| Line lockup (main) | Site header, banners, documents | One line tangles on the left, then runs straight under "easily uncomplicated" and ends in a dot |
-| Bundle | Hero images, big banners, posters | Four strands tangle on the left and are pulled into one straight line, with "easily uncomplicated" above it, ending in a dot |
-| Icon | Favicon, app icon, social avatar | The single tangled line and dot only, no words |
-| Stacked lockup | Square spaces | The icon, then "easily" over "uncomplicated" |
+| Wordmark lockup | Site header, banners, documents | Monogram beside “Easily Uncomplicated” |
+| App icon | Favicon, app icon, social avatar | EU monogram centered in a rounded square |
+| Monogram | Small spaces and compact layouts | EU letters without the full wordmark |
 
-### Colours for each version
+### Colour use
 
-| Version | Background | Strands | Line and words | Dot |
-|---|---|---|---|---|
-| Line lockup, light | Stone | none (the one line is Pine) | Pine | Pine |
-| Line lockup, dark | Pine or Slate | none (the one line is Stone) | Stone | Lime |
-| Bundle, light | Stone | Steel | Pine | Pine |
-| Bundle, dark | Pine or Slate | Steel | Stone | Lime |
-| Icon | Pine rounded square | none | Stone line | Lime |
-| Stacked lockup, light | Stone | none | "easily" Pine, "uncomplicated" Olive | Lime, inside the Pine square |
-| Stacked lockup, dark | Pine or Slate | none | Stone | Lime |
+| Version | Background | Monogram | Wordmark / detail |
+|---|---|---|---|
+| Primary lockup | Navy | Amber tile, Navy E, Ivory U | Ivory words; Amber underline or small highlight |
+| Light lockup | Ivory or Paper | Navy E and U on an Amber tile | Navy words; Amber detail |
+| App icon | Navy | Amber E, Ivory U | No words |
+| Monogram on light | Ivory or Paper | Navy letters on Amber tile | No words |
 
 ### Rules
 
-- **The lime dot needs a dark background.** Lime on Stone is only 1.1:1, so it disappears. On light backgrounds the dot is Pine, or it sits inside the Pine square of the icon.
-- **Lime on Pine or Slate is 9.0:1**, so the dark versions keep the lime dot.
-- **Words:** Pine on Stone is 10.2:1, and Stone on Pine is 10.2:1.
-- **Olive words only on light backgrounds.** Olive on Stone is 6.2:1, but on Slate it is 1.6:1. On dark backgrounds use Stone.
-- **Steel strands are decoration only.** Steel is 3.1:1 on Stone and 3.3:1 on Pine, which is fine for quiet lines but never for words.
-- **Keep the line straight and level.** No tilting. The words sit above it, with a clear gap so the tails of "y" and "p" do not touch it.
-- Do not use lime for the words or the strands. The dot is the only place the accent appears in the logo.
-- Write the name in lowercase, in Outfit medium weight.
-- Do not stretch, rotate or recolour the logo. Leave empty space around it at least as wide as the dot.
-- Check the icon at 16 px (favicon size) before using a new version.
+- Keep the EU letter shapes, overlap, and proportions intact.
+- Use Navy, Amber, and Ivory only in the logo; do not reintroduce the retired Pine/Olive/Slate palette or Lime accent.
+- Do not place Amber text or details directly on Ivory; the contrast is too low.
+- Keep clear space around the logo at least equal to the monogram tile's corner radius.
+- Do not stretch, rotate, or add effects to the logo.
+- Use the monogram alone at small sizes, and test that it remains legible at 16 px.
 
-## 7. Type
+---
 
-- Font: Outfit (free, already used on the site), then Helvetica Neue and Arial as fallback.
-- Wordmark: lowercase, medium weight. "easily uncomplicated" on one line in the line lockup and the bundle, and "easily" over "uncomplicated" in the stacked lockup.
+## 5. Type
 
-## 8. CSS variables (for when the pages are redone)
+- **Font:** Outfit, then Helvetica Neue and Arial as fallbacks.
+- **Wordmark:** “Easily Uncomplicated” in title case, using a clear, modern sans-serif. Keep “Easily” heavier than “Uncomplicated” when using the two-line lockup.
+- Keep body copy simple and readable; use weight and size before adding decorative effects.
+
+---
+
+## 6. CSS variables
 
 ```css
 :root {
-  --pine: #1F3D36;
-  --olive: #4F5D2F;
-  --slate: #2B3A42;
-  --steel: #7A8B94;
-  --steel-deep: #5F6C73;
-  --stone: #F0EFE9;
-  --night-pine: #12261F;
-  --brick: #B3382C;
-  --accent: #C6F135; /* lime */
+  --navy: #202D50;
+  --amber: #F3B544;
+  --ivory: #F7F5EF;
+  --paper: #F5F2EC;
+  --ink: #202327;
+  --muted-ink: #62676C;
 }
 ```
 
-## 9. Still to do
+---
 
-1. Draw the logo files as SVG: icon, line lockup (light and dark), bundle (light and dark), stacked lockup (light and dark) and the favicon. Turn the text into outlines so the files do not depend on the Outfit font.
-2. Redo the pages in the new colours and logo (later). The pages still use the old blue and red until then.
+## 7. Still to do
+
+1. Refine the EU monogram and create production SVGs for the wordmark lockup, app icon, and favicon. Outline text in final logo files so they do not depend on a locally installed font.
+2. Update the site colours and logo when the pages are redesigned.

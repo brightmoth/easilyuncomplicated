@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 180" role="img" aria-labelledby="title description">
+  <title id="title">Easily Uncomplicated</title>
+  <desc id="description">Navy and ivory EU monogram on an amber tile, beside the Easily Uncomplicated wordmark.</desc>
+  <rect width="700" height="180" rx="22" fill="#202D50"/>
+  <rect x="20" y="6" width="168" height="168" rx="36" fill="#F3B544"/>
+  <path d="M57 31 H134 V55 H87 V73 H126 V96 H87 V113 H134 V137 H57 Z" fill="#202D50"/>
+  <path d="M108 31 H124 V78 C124 97 131 107 146 107 C161 107 168 97 168 78 V31 H184 V80 C184 113 170 132 146 132 C122 132 108 113 108 80 Z" fill="#F7F5EF"/>
+  <text x="222" y="83" fill="#F7F5EF" font-family="Outfit, 'Helvetica Neue', Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="-1.8">Easily</text>
+  <text x="222" y="137" fill="#F7F5EF" font-family="Outfit, 'Helvetica Neue', Arial, sans-serif" font-size="43" font-weight="400" letter-spacing="-1.4">Uncomplicated</text>
+</svg>

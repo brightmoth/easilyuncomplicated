@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 1060" role="img" aria-labelledby="sheet-title sheet-description">
+  <title id="sheet-title">Easily Uncomplicated — fresh logo explorations</title>
+  <desc id="sheet-description">Four independent logo directions: expressive typography, a geometric EU monogram, a friendly doorway symbol, and a modular mark.</desc>
+  <rect width="1440" height="1060" fill="#F5F2EC"/>
+
+  <g font-family="'Helvetica Neue', Arial, sans-serif">
+    <text x="72" y="94" fill="#202327" font-size="40" font-weight="700" letter-spacing="-1.2">Fresh logo explorations</text>
+    <text x="74" y="130" fill="#62676C" font-size="17">A wider visual range, intentionally independent of the current brand guide.</text>
+
+    <g>
+      <rect x="72" y="174" width="624" height="376" rx="20" fill="#FFFDF9"/>
+      <text x="104" y="220" fill="#74777A" font-size="12" font-weight="700" letter-spacing="2">01 / TYPE WITH A TWIST</text>
+      <text x="104" y="330" fill="#E4674B" font-size="82" font-weight="800" letter-spacing="-6">easily</text>
+      <text x="105" y="381" fill="#25272A" font-size="39" font-weight="500" letter-spacing="-1.6">uncomplicated</text>
+      <path d="M108 407 H305" stroke="#E4674B" stroke-width="7" stroke-linecap="round"/>
+      <circle cx="320" cy="407" r="7" fill="#E4674B"/>
+      <text x="104" y="478" fill="#62676C" font-size="16">A confident typographic signature with a small wink.</text>
+      <text x="104" y="507" fill="#62676C" font-size="16">No separate icon needed; works especially well in headers.</text>
+    </g>
+
+    <g>
+      <rect x="744" y="174" width="624" height="376" rx="20" fill="#202D50"/>
+      <text x="776" y="220" fill="#D6D9E5" font-size="12" font-weight="700" letter-spacing="2">02 / THE EU MONOGRAM</text>
+      <rect x="784" y="260" width="120" height="120" rx="28" fill="#F3B544"/>
+      <path d="M812 291 H861 V308 H831 V322 H855 V339 H831 V350 H861 V367 H812 Z" fill="#202D50"/>
+      <path d="M866 291 H883 V324 C883 335 888 342 898 342 C908 342 913 335 913 324 V291 H930 V325 C930 346 918 359 898 359 C878 359 866 346 866 325 Z" fill="#F7F5EF" transform="translate(-15 0)"/>
+      <text x="942" y="310" fill="#F7F5EF" font-size="43" font-weight="700" letter-spacing="-1.4">Easily</text>
+      <text x="942" y="355" fill="#F7F5EF" font-size="37" font-weight="400" letter-spacing="-1.4">Uncomplicated</text>
+      <text x="776" y="438" fill="#D6D9E5" font-size="16">A compact, ownable badge built from the initials.</text>
+      <text x="776" y="467" fill="#D6D9E5" font-size="16">Strong on app tiles, social avatars, and small screens.</text>
+    </g>
+
+    <g>
+      <rect x="72" y="582" width="624" height="376" rx="20" fill="#D9F0E7"/>
+      <text x="104" y="628" fill="#377466" font-size="12" font-weight="700" letter-spacing="2">03 / THE OPEN DOOR</text>
+      <path d="M130 799 V728 C130 686 158 659 198 659 C238 659 266 686 266 728 V799"
+        fill="none" stroke="#267A68" stroke-width="15" stroke-linecap="round"/>
+      <path d="M174 799 V733 C174 715 183 704 198 704 C213 704 222 715 222 733 V799"
+        fill="#F1A15D"/>
+      <circle cx="209" cy="754" r="4" fill="#267A68"/>
+      <text x="300" y="724" fill="#174E45" font-size="45" font-weight="700" letter-spacing="-2">easily</text>
+      <text x="300" y="772" fill="#174E45" font-size="34" font-weight="400" letter-spacing="-1.4">uncomplicated</text>
+      <text x="104" y="865" fill="#3E6B62" font-size="16">An inviting doorway suggests less friction and room to breathe.</text>
+      <text x="104" y="894" fill="#3E6B62" font-size="16">Approachable and optimistic, with a warmer, human character.</text>
+    </g>
+
+    <g>
+      <rect x="744" y="582" width="624" height="376" rx="20" fill="#F7E5E8"/>
+      <text x="776" y="628" fill="#8D5964" font-size="12" font-weight="700" letter-spacing="2">04 / THE NEAT LITTLE SYSTEM</text>
+      <rect x="785" y="685" width="24" height="24" rx="5" fill="#D45B6D"/>
+      <rect x="814" y="685" width="24" height="24" rx="5" fill="#E6A0A8"/>
+      <rect x="843" y="685" width="24" height="24" rx="5" fill="#D45B6D"/>
+      <rect x="785" y="714" width="24" height="24" rx="5" fill="#E6A0A8"/>
+      <rect x="814" y="714" width="24" height="24" rx="5" fill="#D45B6D"/>
+      <rect x="843" y="714" width="24" height="24" rx="5" fill="#E6A0A8"/>
+      <path d="M880 711 H916" stroke="#A54859" stroke-width="4" stroke-linecap="round"/>
+      <path d="M908 702 L918 711 L908 720" fill="none" stroke="#A54859" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="930" y="685" width="53" height="53" rx="13" fill="#A54859"/>
+      <path d="M943 711 L954 722 L972 700" fill="none" stroke="#FFF8F5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="1010" y="708" fill="#733B48" font-size="37" font-weight="700" letter-spacing="-1.7">easily</text>
+      <text x="1010" y="750" fill="#733B48" font-size="31" font-weight="400" letter-spacing="-1.4">uncomplicated</text>
+      <text x="776" y="825" fill="#81565F" font-size="16">A playful “before to after” mark: scattered pieces become a</text>
+      <text x="776" y="854" fill="#81565F" font-size="16">single checked tile. Flexible for app families and product icons.</text>
+    </g>
+
+    <text x="72" y="1010" fill="#74777A" font-size="14">Concept sketches only — palettes and symbols are open for mixing and refinement.</text>
+  </g>
+</svg>
