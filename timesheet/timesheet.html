@@ -5,96 +5,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Track your work hours, tasks, and earnings.">
   <title>Timesheet | Easily Uncomplicated</title>
+  <link rel="icon" href="../assets/brand/eu/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/brand/eu/colors.css">
   <link rel="stylesheet" href="timesheet.css">
   <script src="timesheet.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Timesheet</h1>
-    <p>Simple on purpose.</p>
+  <header class="site-header">
+    <div class="page-shell header-content">
+      <a class="brand" href="../index.html" aria-label="Easily Uncomplicated home">
+        <img src="../assets/brand/eu/logo.svg" alt="Easily Uncomplicated">
+      </a>
+      <a class="back-link" href="../index.html"><span aria-hidden="true">←</span> All apps</a>
+    </div>
   </header>
 
-  <main>
-    <section aria-labelledby="entry-heading">
-      <h2 id="entry-heading">Log time</h2>
-
-      <form id="time-entry-form">
-        <fieldset>
-          <legend>Entry method</legend>
-          <label>
-            <input type="radio" name="entry-method" value="manual" checked>
-            Enter times
-          </label>
-          <label>
-            <input type="radio" name="entry-method" value="timer">
-            Use timer
-          </label>
-        </fieldset>
-        <div>
-          <label for="entry-date">Date</label>
-          <input id="entry-date" name="date" type="date" required>
-        </div>
-        <div>
-          <label for="entry-from">From</label>
-          <input id="entry-from" name="from" type="time" required>
-        </div>
-        <div>
-          <label for="entry-to">To</label>
-          <input id="entry-to" name="to" type="time" required>
-        </div>
-        <div>
-          <label for="entry-task">Task</label>
-          <input id="entry-task" name="task" list="task-options" required>
-          <datalist id="task-options">
-            <option value="Client meeting"></option>
-            <option value="Maintenance"></option>
-            <option value="Admin"></option>
-            <option value="Travel"></option>
-          </datalist>
-        </div>
-        <div>
-          <label for="entry-note">Note (optional)</label>
-          <textarea id="entry-note" name="note" rows="2"></textarea>
-        </div>
-        <div>
-          <label for="entry-break">Break in minutes (optional)</label>
-          <input id="entry-break" name="break" type="number" min="0" step="1">
-        </div>
-        <button type="submit">Add entry</button>
-      </form>
-
-      <div aria-label="Timer controls">
-        <button type="button">Start timer</button>
-        <button type="button">Stop timer</button>
-        <p>Timer is not running.</p>
+  <main class="page-shell dashboard">
+    <section class="page-intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow"><span aria-hidden="true"></span> Work &amp; time</p>
+        <h1 id="page-title">Timesheet<span>.</span></h1>
+        <p>Keep your hours in order. Simple on purpose.</p>
+      </div>
+      <div class="intro-actions">
+        <span class="local-note"><span aria-hidden="true"></span> A focused tool for your workday</span>
+        <a class="rates-link" href="#settings-panel">Set pay &amp; overtime rates <span aria-hidden="true">↓</span></a>
       </div>
     </section>
 
-    <section aria-labelledby="entries-heading">
-      <h2 id="entries-heading">Time entries</h2>
-      <table>
-        <caption>Recorded time entries</caption>
-        <thead>
-          <tr>
-            <th scope="col">Date</th>
-            <th scope="col">Time</th>
-            <th scope="col">Task</th>
-            <th scope="col">Hours</th>
-            <th scope="col">Note</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="6">No time entries yet.</td>
-          </tr>
-        </tbody>
-      </table>
+    <section class="panel entry-panel" aria-labelledby="entry-heading">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Add to your week</p>
+          <h2 id="entry-heading">Log time</h2>
+        </div>
+        <span class="section-index">01</span>
+      </div>
+
+      <form id="time-entry-form">
+        <fieldset class="entry-method">
+          <legend>Entry method</legend>
+          <label class="choice">
+            <input type="radio" name="entry-method" value="manual" checked>
+            Enter times
+          </label>
+          <label class="choice">
+            <input type="radio" name="entry-method" value="timer">
+            Stopwatch
+          </label>
+        </fieldset>
+        <div class="form-grid">
+          <div class="field">
+            <label for="entry-date">Date</label>
+            <input id="entry-date" name="date" type="date" required>
+          </div>
+          <div class="field" id="manual-time-fields">
+            <label for="entry-from">From</label>
+            <input id="entry-from" name="from" type="time" required>
+            <label for="entry-to">To</label>
+            <input id="entry-to" name="to" type="time" required>
+          </div>
+          <div class="field field-task">
+            <label for="entry-task">Task</label>
+            <input id="entry-task" name="task" list="task-options" required>
+            <datalist id="task-options">
+              <option value="Client meeting"></option>
+              <option value="Maintenance"></option>
+              <option value="Admin"></option>
+              <option value="Travel"></option>
+            </datalist>
+          </div>
+          <div class="field field-wide">
+            <label for="entry-note">Note (optional)</label>
+            <textarea id="entry-note" name="note" rows="2"></textarea>
+          </div>
+          <div class="field">
+            <label for="entry-break">Break in minutes (optional)</label>
+            <input id="entry-break" name="break" type="number" min="0" step="1">
+          </div>
+        </div>
+        <button class="button button-primary" id="add-entry-button" type="submit">Add entry <span aria-hidden="true">+</span></button>
+      </form>
+
+      <div class="timer-controls" id="timer-controls" aria-label="Stopwatch controls" hidden>
+        <div class="timer-status">
+          <span class="timer-indicator" id="timer-indicator" aria-hidden="true"></span>
+          <div>
+            <p id="timer-state" role="status" aria-live="polite">Stopwatch is ready.</p>
+            <output class="timer-display" id="timer-display" aria-label="Elapsed time">00:00:00</output>
+          </div>
+        </div>
+        <div class="timer-buttons">
+          <button class="button button-secondary" id="start-timer" type="button">Start</button>
+          <button class="button button-quiet" id="pause-timer" type="button" disabled>Pause</button>
+          <button class="button button-quiet" id="stop-timer" type="button" disabled>Stop &amp; save</button>
+        </div>
+      </div>
+      <p class="entry-status" id="entry-status" role="status" aria-live="polite"></p>
     </section>
 
-    <section aria-labelledby="summary-heading">
-      <h2 id="summary-heading">Summary</h2>
-      <div>
+    <section class="panel summary-panel" aria-labelledby="summary-heading">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">At a glance</p>
+          <h2 id="summary-heading">Summary</h2>
+        </div>
+        <span class="section-index">02</span>
+      </div>
+      <div class="period-control">
         <label for="summary-period">Period</label>
         <select id="summary-period" name="period">
           <option value="week">This week</option>
@@ -102,156 +120,245 @@
           <option value="custom">Custom range</option>
         </select>
       </div>
-      <div>
-        <label for="range-from">Range from</label>
-        <input id="range-from" name="range-from" type="date">
-        <label for="range-to">Range to</label>
-        <input id="range-to" name="range-to" type="date">
+      <div class="range-control">
+        <div class="field">
+          <label for="range-from">Range from</label>
+          <input id="range-from" name="range-from" type="date">
+        </div>
+        <div class="field">
+          <label for="range-to">Range to</label>
+          <input id="range-to" name="range-to" type="date">
+        </div>
       </div>
 
-      <dl>
-        <div>
+      <dl class="stats-grid">
+        <div class="stat-card stat-primary">
           <dt>Total hours</dt>
-          <dd>—</dd>
+          <dd id="summary-total-hours">0h 00m (0.00h)</dd>
         </div>
-        <div>
+        <div class="stat-card">
           <dt>Regular hours</dt>
-          <dd>—</dd>
+          <dd id="summary-regular-hours">0h 00m (0.00h)</dd>
         </div>
-        <div>
+        <div class="stat-card stat-overtime">
           <dt>Overtime hours</dt>
-          <dd>—</dd>
+          <dd id="summary-overtime-hours">0h 00m (0.00h)</dd>
         </div>
-        <div>
+        <div class="stat-card stat-earnings">
           <dt>Total earnings</dt>
-          <dd>Add your rates to see earnings.</dd>
+          <dd id="summary-total-earnings"></dd>
         </div>
       </dl>
+      <p class="summary-status" id="summary-status" role="status" aria-live="polite"></p>
     </section>
 
-    <section aria-labelledby="hours-chart-heading">
-      <h2 id="hours-chart-heading">Hours per day</h2>
-      <p>No hours recorded for this period.</p>
-      <table>
-        <caption>Hours by day, including regular and overtime hours</caption>
-        <thead>
-          <tr>
-            <th scope="col">Day</th>
-            <th scope="col">Regular hours</th>
-            <th scope="col">Overtime hours</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="3">No data for this period.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section aria-labelledby="tasks-chart-heading">
-      <h2 id="tasks-chart-heading">Time by task</h2>
-      <p>No task time recorded for this period.</p>
-      <table>
-        <caption>Hours and share of time by task</caption>
-        <thead>
-          <tr>
-            <th scope="col">Task</th>
-            <th scope="col">Hours</th>
-            <th scope="col">Share</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colspan="3">No data for this period.</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section aria-labelledby="earnings-heading">
-      <h2 id="earnings-heading">Earnings</h2>
-      <dl>
+    <section class="panel entries-panel" aria-labelledby="entries-heading">
+      <div class="panel-heading">
         <div>
+          <p class="panel-kicker">Your recorded work</p>
+          <h2 id="entries-heading">Time entries</h2>
+        </div>
+        <span class="section-index">03</span>
+      </div>
+      <div class="table-scroll">
+        <table>
+          <caption>Recorded time entries</caption>
+          <thead>
+            <tr>
+              <th scope="col">Date</th>
+              <th scope="col">Time</th>
+              <th scope="col">Task</th>
+              <th scope="col">Hours</th>
+              <th scope="col">Note</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="empty-cell" colspan="6">No time entries yet. Your logged time will appear here.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel chart-panel" aria-labelledby="hours-chart-heading">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Your week, visualized</p>
+          <h2 id="hours-chart-heading">Hours per day</h2>
+        </div>
+        <span class="section-index">04</span>
+      </div>
+      <p class="empty-message">No hours recorded for this period.</p>
+      <div class="table-scroll">
+        <table>
+          <caption>Hours by day, including regular and overtime hours</caption>
+          <thead>
+            <tr>
+              <th scope="col">Day</th>
+              <th scope="col">Regular hours</th>
+              <th scope="col">Overtime hours</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="empty-cell" colspan="3">No data for this period.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel chart-panel" aria-labelledby="tasks-chart-heading">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Where your time goes</p>
+          <h2 id="tasks-chart-heading">Time by task</h2>
+        </div>
+        <span class="section-index">05</span>
+      </div>
+      <p class="empty-message">No task time recorded for this period.</p>
+      <div class="table-scroll">
+        <table>
+          <caption>Hours and share of time by task</caption>
+          <thead>
+            <tr>
+              <th scope="col">Task</th>
+              <th scope="col">Hours</th>
+              <th scope="col">Share</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="empty-cell" colspan="3">No data for this period.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel earnings-panel" aria-labelledby="earnings-heading">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Know what your time is worth</p>
+          <h2 id="earnings-heading">Earnings</h2>
+        </div>
+        <span class="section-index">06</span>
+      </div>
+      <dl class="earnings-grid">
+        <div class="stat-card">
           <dt>Regular pay</dt>
-          <dd>—</dd>
+          <dd id="earnings-regular-pay"></dd>
         </div>
-        <div>
+        <div class="stat-card">
           <dt>Overtime pay</dt>
-          <dd>—</dd>
+          <dd id="earnings-overtime-pay"></dd>
         </div>
-        <div>
+        <div class="stat-card stat-primary">
           <dt>Total pay</dt>
-          <dd>Add your rates to see earnings.</dd>
+          <dd id="earnings-total-pay"></dd>
         </div>
       </dl>
     </section>
 
-    <section aria-labelledby="tasks-heading">
-      <h2 id="tasks-heading">Task presets</h2>
-      <ul>
+    <section class="panel task-panel" aria-labelledby="tasks-heading">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Quick picks</p>
+          <h2 id="tasks-heading">Task presets</h2>
+        </div>
+        <span class="section-index">07</span>
+      </div>
+      <ul class="task-list">
         <li>Client meeting</li>
         <li>Maintenance</li>
         <li>Admin</li>
         <li>Travel</li>
       </ul>
-      <form id="task-form">
-        <label for="new-task">Add a task</label>
-        <input id="new-task" name="task" type="text">
-        <button type="submit">Add task</button>
+      <form id="task-form" class="task-form">
+        <div class="field">
+          <label for="new-task">Add a task</label>
+          <input id="new-task" name="task" type="text">
+        </div>
+        <button class="button button-secondary" type="submit">Add task <span aria-hidden="true">+</span></button>
       </form>
     </section>
 
-    <details>
-      <summary>Settings</summary>
-      <form id="settings-form">
-        <div>
-          <label for="hourly-wage">Hourly wage (R)</label>
-          <input id="hourly-wage" name="hourly-wage" type="number" min="0" step="0.01">
+    <details class="panel settings-panel" id="settings-panel">
+      <summary>
+        <span>
+          <span class="panel-kicker">Your pay rates and overtime rules</span>
+          <span class="settings-title">Pay &amp; overtime settings</span>
+        </span>
+        <span class="settings-chevron" aria-hidden="true">⌄</span>
+      </summary>
+      <form id="settings-form" class="settings-form">
+        <div class="field">
+          <label for="hourly-wage">Your regular hourly pay (R/hour)</label>
+          <input id="hourly-wage" name="hourly-wage" type="number" min="0" step="0.01" inputmode="decimal">
         </div>
-        <fieldset>
+        <fieldset class="settings-fieldset">
           <legend>Overtime wage</legend>
-          <label for="overtime-wage-type">Wage type</label>
-          <select id="overtime-wage-type" name="overtime-wage-type">
-            <option value="amount">Rand amount</option>
-            <option value="multiplier">Multiplier</option>
-          </select>
-          <label for="overtime-wage">Overtime rate</label>
-          <input id="overtime-wage" name="overtime-wage" type="number" min="0" step="0.01">
+          <div class="field">
+            <label for="overtime-wage-type">Wage type</label>
+            <select id="overtime-wage-type" name="overtime-wage-type">
+              <option value="amount">Rand amount</option>
+              <option value="multiplier">Multiplier</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="overtime-wage" id="overtime-wage-label">Overtime pay (R/hour)</label>
+            <input id="overtime-wage" name="overtime-wage" type="number" min="0" step="0.01" inputmode="decimal">
+          </div>
         </fieldset>
-        <div>
+        <div class="field">
           <label for="overtime-threshold">Overtime starts after</label>
           <input id="overtime-threshold" name="overtime-threshold" type="number" min="0" step="0.25">
-          <span>hours</span>
+          <span class="field-hint">hours</span>
         </div>
-        <fieldset>
+        <fieldset class="settings-fieldset overtime-rule">
           <legend>Overtime rule</legend>
-          <label>
+          <label class="choice">
             <input type="radio" name="overtime-rule" value="daily" checked>
             Daily
           </label>
-          <label>
+          <label class="choice">
             <input type="radio" name="overtime-rule" value="weekly">
             Weekly
           </label>
         </fieldset>
+        <p class="settings-hint">Rates are saved only in this browser on this device. Earnings update when you change a rate or time entry.</p>
+        <p class="settings-status" id="settings-status" role="status" aria-live="polite"></p>
       </form>
     </details>
 
-    <section aria-labelledby="data-heading">
-      <h2 id="data-heading">Export and backup</h2>
-      <button type="button">Export CSV</button>
-      <button type="button">Download backup</button>
-      <div>
+    <section class="panel data-panel" aria-labelledby="data-heading">
+      <div class="panel-heading">
+        <div>
+          <p class="panel-kicker">Your records, your choice</p>
+          <h2 id="data-heading">Export and backup</h2>
+        </div>
+        <span class="section-index">08</span>
+      </div>
+      <div class="data-actions">
+        <button class="button button-secondary" type="button">Export CSV <span aria-hidden="true">↓</span></button>
+        <button class="button button-quiet" type="button">Download backup <span aria-hidden="true">↓</span></button>
+      </div>
+      <div class="restore-control">
+        <p>Have a backup file?</p>
         <label for="backup-file">Restore from backup file</label>
         <input id="backup-file" name="backup-file" type="file" accept="application/json,.json">
-        <button type="button">Restore backup</button>
+        <button class="button button-quiet" type="button">Restore backup</button>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>Timesheet by Easily Uncomplicated.</p>
+  <footer class="site-footer">
+    <div class="page-shell footer-content">
+      <a class="footer-brand" href="../index.html">Easily Uncomplicated<span>.</span></a>
+      <p>Thoughtful tools for everyday life. <span>Simple on purpose.</span></p>
+    </div>
   </footer>
 </body>
 </html>
